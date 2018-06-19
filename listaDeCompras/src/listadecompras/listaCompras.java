@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  * @author ESFOT
  */
 public class listaCompras extends javax.swing.JFrame {
-    String concatenar = "";
+    String auxConcatenar = "";
     /**
      * Creates new form listaCompras
      */
@@ -133,8 +133,8 @@ public class listaCompras extends javax.swing.JFrame {
         if(producto.equals("")){
             JOptionPane.showMessageDialog(rootPane, "No has ingresado ningún producto para añadir a la lista!");
         }else{
-            concatenar = concatenar + producto + "\n";
-            txtCompras.setText(concatenar);
+            auxConcatenar = auxConcatenar + producto + "\n";
+            txtCompras.setText(auxConcatenar);
             JOptionPane.showMessageDialog(rootPane, "Producto Ingresado con éxito!");
         }  
 
@@ -154,7 +154,7 @@ public class listaCompras extends javax.swing.JFrame {
   
         if(confirmacion == 0){
             txtCompras.setText("");
-            concatenar = "";
+            auxConcatenar = "";
         }
     }//GEN-LAST:event_bttnReiniciarActionPerformed
 
